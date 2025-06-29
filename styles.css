@@ -72,8 +72,6 @@ body {
   cursor: pointer;
   user-select: none;
 }
-
-/* RESPONSIVO PARA CELULARES */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -82,9 +80,16 @@ body {
     right: 20px;
     background-color: #7cec78;
     flex-direction: column;
-    padding: 10px;
+    padding: 8px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 150px; /* ancho reducido */
+    font-size: 14px; /* texto más pequeño */
+  }
+
+  .nav-menu a {
+    padding: 6px 8px; /* espacio interno reducido */
+    font-size: 14px;  /* texto más pequeño */
   }
 
   .nav-menu.active {
@@ -94,8 +99,11 @@ body {
   .hamburger {
     display: block;
     color: black;
+    font-size: 24px;
   }
 }
+
+  
 
   
   
